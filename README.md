@@ -1,4 +1,8 @@
 # gestion_tienda
+>NetBeans
+
+>Java
+
 Software de gestión de una tienda online.
 
 Primer proyecto Java realizado en la carrera.
