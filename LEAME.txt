@@ -1,0 +1,14 @@
+La clase Persona es abstracta porque no interesa que se pueda instanciar. En la Libreria no queremos que pueda haber "personas" dadas de alta.
+Que sea abstracta también implica que su función es la de establecer un "protocolo"; un estándar sobre los datos y métodos que deben o tienen que incluír sus clases 
+hijas.
+A veces se dice que toda clase que no sea hoja (que tenga subclases) debe ser abstracta, por seguridad y robustez en la implementación. Aunque por supuesto no es
+cierto en todos los casos.
+Usuario también es abstracta por los mismos motivos.
+
+Imaginemos que ahora quiero incluír en la Librería soporte para un componente humano adicional, diferente de los usuarios (clientes y vendedores). La clase abstracta
+Persona me dará los atributos y métodos mínimos que esa nueva subclase debe tener.
+
+Las clases finales, como Cliente y Vendedor, son clases que no pueden crear más herencia. Es decir, son hojas sin posibilidad de extender otras subclases. Todos los
+métodos de una clase final son implícitamente finales, por lo que no pueden ser sobreescritos u ocultados por otras subclases.
+Esto también ofrece seguridad al programa, impidiendo que los métodos de dicha clase sean sobreescritos o que se cree herencia cuando no se debe.
+
